@@ -1,0 +1,194 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <!-- Bosh sarlavha -->
+    <div class="mb-8">
+        <div class="flex items-center justify-between mb-4">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900">Imtihon rejimi</h1>
+                <p class="text-gray-600 mt-1">{{ subject.name }} fani bo'yicha imtihon</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg font-semibold">
+                    <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span id="timer">30:00</span>
+                </div>
+                <a href="{% url 'home' %}" class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-2.5 px-4 rounded-lg transition duration-200 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    Chiqish
+                </a>
+            </div>
+        </div>
+        
+        <!-- Progress bar -->
+        <div class="bg-gray-200 rounded-full h-3 mb-6">
+            <div id="progress-bar" class="bg-blue-600 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+        </div>
+    </div>
+
+    <!-- Imtihon formasi -->
+    <form method="post" id="exam-form" class="space-y-6">
+        {% csrf_token %}
+        {% for question in questions %}
+        <div class="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden question-card" data-question-id="{{ question.id }}">
+            <div class="p-6">
+                <div class="flex items-start gap-4">
+                    <div class="h-10 w-10 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center font-bold flex-shrink-0">
+                        {{ forloop.counter }}
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ question.text }}</h3>
+                        
+                        <!-- Variantlar -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <label class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:border-blue-400 hover:bg-blue-50 transition-all duration-200">
+                                <input type="radio" name="question_{{ question.id }}" value="A" class="w-5 h-5 text-blue-600 focus:ring-blue-500">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2">
+                                        <div class="h-8 w-8 bg-gray-100 text-gray-600 rounded-md flex items-center justify-center font-semibold">
+                                            A
+                                        </div>
+                                        <span class="text-gray-800 font-medium">{{ question.option_a }}</span>
+                                    </div>
+                                </div>
+                            </label>
+                            
+                            <label class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:border-blue-400 hover:bg-blue-50 transition-all duration-200">
+                                <input type="radio" name="question_{{ question.id }}" value="B" class="w-5 h-5 text-blue-600 focus:ring-blue-500">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2">
+                                        <div class="h-8 w-8 bg-gray-100 text-gray-600 rounded-md flex items-center justify-center font-semibold">
+                                            B
+                                        </div>
+                                        <span class="text-gray-800 font-medium">{{ question.option_b }}</span>
+                                    </div>
+                                </div>
+                            </label>
+                            
+                            <label class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:border-blue-400 hover:bg-blue-50 transition-all duration-200">
+                                <input type="radio" name="question_{{ question.id }}" value="C" class="w-5 h-5 text-blue-600 focus:ring-blue-500">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2">
+                                        <div class="h-8 w-8 bg-gray-100 text-gray-600 rounded-md flex items-center justify-center font-semibold">
+                                            C
+                                        </div>
+                                        <span class="text-gray-800 font-medium">{{ question.option_c }}</span>
+                                    </div>
+                                </div>
+                            </label>
+                            
+                            <label class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:border-blue-400 hover:bg-blue-50 transition-all duration-200">
+                                <input type="radio" name="question_{{ question.id }}" value="D" class="w-5 h-5 text-blue-600 focus:ring-blue-500">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2">
+                                        <div class="h-8 w-8 bg-gray-100 text-gray-600 rounded-md flex items-center justify-center font-semibold">
+                                            D
+                                        </div>
+                                        <span class="text-gray-800 font-medium">{{ question.option_d }}</span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+        <!-- Tugmalar -->
+        <div class="flex justify-center gap-4 pt-6">
+            <button type="button" onclick="submitExam()" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-200 flex items-center gap-2 shadow-lg hover:shadow-xl">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Imtihonni tugatish
+            </button>
+        </div>
+    </form>
+</div>
+
+<script>
+let timeLeft = 1800; // 30 daqiqa
+const timerElement = document.getElementById('timer');
+const progressBar = document.getElementById('progress-bar');
+const examForm = document.getElementById('exam-form');
+const totalQuestions = {{ questions|length }};
+
+// Timer
+function updateTimer() {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    
+    // Progress bar
+    const progress = ((1800 - timeLeft) / 1800) * 100;
+    progressBar.style.width = `${progress}%`;
+    
+    if (timeLeft <= 0) {
+        submitExam();
+    } else {
+        timeLeft--;
+        setTimeout(updateTimer, 1000);
+    }
+}
+
+// Progress tracking
+function updateProgress() {
+    const answeredQuestions = document.querySelectorAll('input[type="radio"]:checked').length;
+    const progress = (answeredQuestions / totalQuestions) * 100;
+    progressBar.style.width = `${progress}%`;
+}
+
+// Form submission
+function submitExam() {
+    if (confirm('Imtihonni tugatishga ishonchingiz komilmi? Javoblarni qaytarib bo\'lmaydi.')) {
+        examForm.submit();
+    }
+}
+
+// Event listeners
+document.addEventListener('DOMContentLoaded', function() {
+    updateTimer();
+    
+    // Track progress when answers change
+    document.querySelectorAll('input[type="radio"]').forEach(radio => {
+        radio.addEventListener('change', updateProgress);
+    });
+    
+    // Keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && e.key === 'Enter') {
+            submitExam();
+        }
+    });
+    
+    // Auto-save to localStorage
+    setInterval(function() {
+        const formData = new FormData(examForm);
+        const answers = {};
+        for (let [key, value] of formData.entries()) {
+            answers[key] = value;
+        }
+        localStorage.setItem('examAnswers', JSON.stringify(answers));
+    }, 5000);
+    
+    // Restore answers from localStorage
+    const savedAnswers = localStorage.getItem('examAnswers');
+    if (savedAnswers) {
+        const answers = JSON.parse(savedAnswers);
+        for (let [key, value] of answers) {
+            const radio = document.querySelector(`input[name="${key}"][value="${value}"]`);
+            if (radio) {
+                radio.checked = true;
+            }
+        }
+        updateProgress();
+    }
+});
+</script>
+{% endblock %}

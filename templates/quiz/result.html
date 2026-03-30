@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load quiz_filters %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <div class="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8">
+            <div class="text-center">
+                <div class="h-20 w-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h1 class="text-3xl font-bold mb-2">Imtihon natijalari</h1>
+                <p class="text-blue-100">{{ result.subject.name }} fani bo'yicha</p>
+            </div>
+        </div>
+
+        <!-- Result Content -->
+        <div class="p-8">
+            <div class="text-center mb-8">
+                {% with percentage=result.score|mul:100|div:result.total_questions %}
+                <div class="inline-flex items-center justify-center h-32 w-32 rounded-full mb-4 {% if percentage >= 70 %}bg-green-100{% elif percentage >= 50 %}bg-yellow-100{% else %}bg-red-100{% endif %}">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold {% if percentage >= 70 %}text-green-600{% elif percentage >= 50 %}text-yellow-600{% else %}text-red-600{% endif %}">
+                            {{ result.score }}
+                        </div>
+                        <div class="text-sm text-gray-600">/ {{ result.total_questions }}</div>
+                    </div>
+                </div>
+                
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                    {% if percentage >= 70 %}
+                        A'lo baholandi!
+                    {% elif percentage >= 50 %}
+                        Yaxshi natija!
+                    {% else %}
+                        Qayta urinib ko'ring
+                    {% endif %}
+                </h2>
+                
+                <p class="text-gray-600 mb-6">
+                    To'g'ri javoblar: {{ result.score }} ta, Noto'g'ri javoblar: {{ result.total_questions|sub:result.score }} ta
+                </p>
+                
+                <!-- Foiz ko'rsatkichi -->
+                <div class="max-w-md mx-auto mb-8">
+                    <div class="bg-gray-200 rounded-full h-4 mb-2">
+                        <div class="h-4 rounded-full transition-all duration-500 {% if percentage >= 70 %}bg-green-500{% elif percentage >= 50 %}bg-yellow-500{% else %}bg-red-500{% endif %}" 
+                             style="width: {{ percentage }}%"></div>
+                    </div>
+                    <p class="text-sm text-gray-600">
+                        {{ percentage }}% to'g'ri javob foizi
+                    </p>
+                </div>
+                {% endwith %}
+            </div>
+
+            <!-- Statistika -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-gray-50 rounded-xl p-6 text-center">
+                    <div class="h-12 w-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-1">Sarflangan vaqt</p>
+                    <p class="text-xl font-bold text-gray-900">~30 daqiqa</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-6 text-center">
+                    <div class="h-12 w-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-1">To'g'ri javoblar</p>
+                    <p class="text-xl font-bold text-gray-900">{{ result.score }} ta</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-6 text-center">
+                    <div class="h-12 w-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-1">Foiz</p>
+                    {% with percentage=result.score|mul:100|div:result.total_questions %}
+                    <p class="text-xl font-bold text-gray-900">{{ percentage }}%</p>
+                    {% endwith %}
+                </div>
+            </div>
+
+            <!-- Tavsiyalar -->
+            <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-8">
+                <h3 class="text-lg font-semibold text-blue-900 mb-3 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    Tavsiyalar
+                </h3>
+                {% with percentage=result.score|mul:100|div:result.total_questions %}
+                <div class="text-blue-800 space-y-2">
+                    {% if percentage >= 70 %}
+                        <p>• A'lo natija! Siz ushbu fanni yaxshi o'zlashtirgansiz.</p>
+                        <p>• Boshqa fanlarni ham sinab ko'rishni tavsiya etamiz.</p>
+                        <p>• Davlat imtihonlariga tayyorgarlikni davom ettiring.</p>
+                    {% elif percentage >= 50 %}
+                        <p>• Yaxshi natija, ammo biroz yaxshilash kerak.</p>
+                        <p>• O'rganish rejimida qo'shimcha mashq qiling.</p>
+                        <p>• Noto'g'ri javoblarni takrorlang.</p>
+                    {% else %}
+                        <p>• Qayta tayyorgarlik ko'rish zarur.</p>
+                        <p>• O'rganish rejimida barcha savollarni diqqat bilan o'rganing.</p>
+                        <p>• Ustozdan yoki qo'llanmadan qo'shimcha yordam oling.</p>
+                    {% endif %}
+                </div>
+                {% endwith %}
+            </div>
+
+            <!-- Tugmalar -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="{% url 'exam_mode' result.subject.id %}" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                    </svg>
+                    Qayta imtihon
+                </a>
+                
+                <a href="{% url 'learn_mode' result.subject.id %}" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                    O'rganish rejimi
+                </a>
+                
+                <a href="{% url 'home' %}" class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                    </svg>
+                    Asosiy sahifa
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

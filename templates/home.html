@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="bg-gradient-to-r from-blue-700 to-indigo-800 rounded-2xl p-8 mb-10 text-white shadow-lg relative overflow-hidden">
+    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-32 h-32 bg-white opacity-10 rounded-full blur-2xl"></div>
+    <div class="absolute bottom-0 right-20 w-24 h-24 bg-blue-300 opacity-20 rounded-full blur-xl"></div>
+    
+    <div class="relative z-10">
+        <h1 class="text-3xl sm:text-4xl font-bold mb-3">Assalomu alaykum, {{ request.user.username }}! 👋</h1>
+        <p class="text-blue-100 text-lg max-w-2xl">
+            Davlat imtihonlariga tayyorgarlik platformasiga xush kelibsiz. Bilimingizni mustahkamlash uchun quyidagi fanlardan birini tanlang va mashg'ulotni boshlang.
+        </p>
+    </div>
+</div>
+
+<div class="mb-6 flex items-center justify-between">
+    <h2 class="text-2xl font-bold text-gray-800">Mavjud fanlar</h2>
+    <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full border border-blue-200">
+        {{ subjects|length }} ta fan
+    </span>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {% for subject in subjects %}
+    <div class="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group">
+        
+        <div class="p-6 flex-grow">
+            <div class="flex items-center justify-between mb-4">
+                <div class="h-14 w-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl font-black group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shadow-sm">
+                    {{ subject.name|make_list|first|upper }}
+                </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ subject.name }}</h3>
+            <p class="text-gray-500 text-sm line-clamp-2">
+                {{ subject.description|default:"Ushbu fan bo'yicha testlarni ishlash orqali imtihonlarga sifatli tayyorgarlik ko'ring." }}
+            </p>
+        </div>
+        
+        <div class="bg-gray-50 px-6 py-5 border-t border-gray-100 flex flex-col sm:flex-row gap-3">
+            <a href="{% url 'learn_mode' subject.id %}" class="flex-1 bg-white border border-gray-300 text-gray-700 hover:bg-gray-100 hover:text-blue-700 hover:border-blue-300 font-semibold py-2.5 px-4 rounded-lg text-center transition duration-200 flex items-center justify-center gap-2 shadow-sm">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+                O'rganish
+            </a>
+            
+            <a href="{% url 'exam_mode' subject.id %}" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-4 rounded-lg text-center transition duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Imtihon
+            </a>
+        </div>
+    </div>
+    
+    {% empty %}
+    <div class="col-span-1 md:col-span-2 bg-yellow-50 border border-yellow-200 text-yellow-800 rounded-xl p-8 text-center shadow-sm">
+        <svg class="w-16 h-16 mx-auto text-yellow-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+        </svg>
+        <h3 class="text-xl font-bold mb-2">Hozircha fanlar kiritilmagan</h3>
+        <p class="text-yellow-700">Admin panel orqali fanlarni qo'shishingiz bilan ular ushbu sahifada avtomatik ravishda paydo bo'ladi.</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

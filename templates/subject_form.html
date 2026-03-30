@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto">
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-8">
+        <div>
+            <h1 class="text-3xl font-bold text-gray-900">
+                {% if form.instance.id %}Fanni tahrirlash{% else %}Yangi fan qo'shish{% endif %}
+            </h1>
+            <p class="text-gray-600 mt-1">
+                {% if form.instance.id %}Fan ma'lumotlarini yangilang{% else %}Yangi fan yarating{% endif %}
+            </p>
+        </div>
+        <a href="{% url 'subject_list' %}" class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-2.5 px-4 rounded-lg transition duration-200 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            </svg>
+            Orqaga
+        </a>
+    </div>
+
+    <!-- Form -->
+    <div class="bg-white rounded-xl border border-gray-200 shadow-sm">
+        <form method="post" class="p-8">
+            {% csrf_token %}
+            
+            {% if form.non_field_errors %}
+            <div class="bg-red-50 border border-red-200 text-red-800 rounded-lg p-4 mb-6">
+                {% for error in form.non_field_errors %}
+                    <p class="text-sm">{{ error }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <div class="space-y-6">
+                <!-- Fan nomi -->
+                <div>
+                    <label for="{{ form.name.id_for_label }}" class="block text-sm font-semibold text-gray-900 mb-2">
+                        Fan nomi <span class="text-red-500">*</span>
+                    </label>
+                    {{ form.name }}
+                    {% if form.name.errors %}
+                        <p class="mt-1 text-sm text-red-600">{{ form.name.errors.0 }}</p>
+                    {% endif %}
+                    <p class="mt-1 text-sm text-gray-500">Fan nomini aniq yozing (masalan: Matematika, Fizika)</p>
+                </div>
+
+                <!-- Fan tavsifi -->
+                <div>
+                    <label for="{{ form.description.id_for_label }}" class="block text-sm font-semibold text-gray-900 mb-2">
+                        Fan tavsifi
+                    </label>
+                    {{ form.description }}
+                    {% if form.description.errors %}
+                        <p class="mt-1 text-sm text-red-600">{{ form.description.errors.0 }}</p>
+                    {% endif %}
+                    <p class="mt-1 text-sm text-gray-500">Fan haqida qisqacha ma'lumot (ixtiyoriy)</p>
+                </div>
+            </div>
+
+            <!-- Tugmalar -->
+            <div class="flex justify-end gap-4 mt-8 pt-6 border-t border-gray-200">
+                <a href="{% url 'subject_list' %}" class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-2.5 px-6 rounded-lg transition duration-200">
+                    Bekor qilish
+                </a>
+                <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-200 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    {% if form.instance.id %}Saqlash{% else %}Qo'shish{% endif %}
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Ko'rsatmalar -->
+    <div class="mt-8 bg-green-50 border border-green-200 rounded-xl p-6">
+        <h3 class="text-lg font-semibold text-green-900 mb-3 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            Fan qo'shish bo'yicha tavsiyalar
+        </h3>
+        <ul class="text-green-800 space-y-2 text-sm">
+            <li>• Fan nomini rasmiy nom bilan yozing</li>
+            <li>• Tavsifda fan qanday mavzularni o'z ichiga olgani haqida yozishingiz mumkin</li>
+            <li>• Fan qo'shgandan so'ng uni savollar bilan to'ldirishingiz kerak</li>
+            <li>• Har bir fan kamida 10 ta savoldan iborat bo'lishi tavsiya etiladi</li>
+        </ul>
+    </div>
+
+    <!-- Agar fanga savollar mavjud bo'lsa -->
+    {% if form.instance.id and form.instance.question_set.exists %}
+    <div class="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
+        <h3 class="text-lg font-semibold text-blue-900 mb-3">Fanga tegishli savollar</h3>
+        <div class="text-blue-800 mb-4">
+            <p class="mb-2">Ushbu fanga {{ form.instance.question_set.count }} ta savol kiritilgan.</p>
+            <div class="flex gap-3">
+                <a href="{% url 'question_add' %}?subject={{ form.instance.id }}" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200 text-sm">
+                    Yangi savol qo'shish
+                </a>
+                <a href="{% url 'question_list' %}" class="bg-white hover:bg-gray-50 text-blue-600 border border-blue-300 font-medium py-2 px-4 rounded-lg transition duration-200 text-sm">
+                    Barcha savollarni ko'rish
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Form fields ni styling qilish
+    const formFields = document.querySelectorAll('input[type="text"], textarea');
+    formFields.forEach(field => {
+        field.classList.add('w-full', 'px-4', 'py-2', 'border', 'border-gray-300', 'rounded-lg', 'focus:ring-2', 'focus:ring-green-500', 'focus:border-green-500');
+    });
+    
+    // Textarea ni kattalashtirish
+    const textarea = document.querySelector('textarea[name="description"]');
+    if (textarea) {
+        textarea.rows = 4;
+    }
+    
+    // Auto-save functionality
+    const form = document.querySelector('form');
+    
+    // Form data ni localStorage ga saqlash
+    function saveFormData() {
+        const formData = new FormData(form);
+        const data = {};
+        for (let [key, value] of formData.entries()) {
+            data[key] = value;
+        }
+        localStorage.setItem('subjectForm', JSON.stringify(data));
+    }
+    
+    // Form data ni tiklash
+    function restoreFormData() {
+        const savedData = localStorage.getItem('subjectForm');
+        if (savedData) {
+            const data = JSON.parse(savedData);
+            for (let [key, value] of Object.entries(data)) {
+                const field = form.querySelector(`[name="${key}"]`);
+                if (field) {
+                    field.value = value;
+                }
+            }
+        }
+    }
+    
+    // Form inputlar o'zgarganda saqlash
+    form.addEventListener('input', saveFormData);
+    
+    // Form yuborilganda localStorage ni tozalash
+    form.addEventListener('submit', function() {
+        localStorage.removeItem('subjectForm');
+    });
+    
+    // Agar formda xatolik bo'lsa, ma'lumotlarni tiklash
+    {% if form.errors %}
+        restoreFormData();
+    {% endif %}
+});
+</script>
+
+<style>
+/* Custom form styles */
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+</style>
+{% endblock %}

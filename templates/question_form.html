@@ -1,0 +1,238 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto">
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-8">
+        <div>
+            <h1 class="text-3xl font-bold text-gray-900">
+                {% if form.instance.id %}Savolni tahrirlash{% else %}Yangi savol qo'shish{% endif %}
+            </h1>
+            <p class="text-gray-600 mt-1">
+                {% if form.instance.id %}Savol ma'lumotlarini yangilang{% else %}Yangi test savolini yarating{% endif %}
+            </p>
+        </div>
+        <a href="{% url 'question_list' %}" class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-2.5 px-4 rounded-lg transition duration-200 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            </svg>
+            Orqaga
+        </a>
+    </div>
+
+    <!-- Form -->
+    <div class="bg-white rounded-xl border border-gray-200 shadow-sm">
+        <form method="post" class="p-8">
+            {% csrf_token %}
+            
+            {% if form.non_field_errors %}
+            <div class="bg-red-50 border border-red-200 text-red-800 rounded-lg p-4 mb-6">
+                {% for error in form.non_field_errors %}
+                    <p class="text-sm">{{ error }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <div class="space-y-6">
+                <!-- Fan -->
+                <div>
+                    <label for="{{ form.subject.id_for_label }}" class="block text-sm font-semibold text-gray-900 mb-2">
+                        Fan <span class="text-red-500">*</span>
+                    </label>
+                    {{ form.subject }}
+                    {% if form.subject.errors %}
+                        <p class="mt-1 text-sm text-red-600">{{ form.subject.errors.0 }}</p>
+                    {% endif %}
+                </div>
+
+                <!-- Savol matni -->
+                <div>
+                    <label for="{{ form.text.id_for_label }}" class="block text-sm font-semibold text-gray-900 mb-2">
+                        Savol matni <span class="text-red-500">*</span>
+                    </label>
+                    {{ form.text }}
+                    {% if form.text.errors %}
+                        <p class="mt-1 text-sm text-red-600">{{ form.text.errors.0 }}</p>
+                    {% endif %}
+                    <p class="mt-1 text-sm text-gray-500">Savolni aniq va tushunarli yozing</p>
+                </div>
+
+                <!-- Variantlar -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold text-gray-900">Javob variantlari</h3>
+                    
+                    <!-- A varianti -->
+                    <div>
+                        <label for="{{ form.option_a.id_for_label }}" class="block text-sm font-medium text-gray-700 mb-2">
+                            <span class="inline-flex items-center justify-center h-6 w-6 bg-blue-100 text-blue-600 rounded font-semibold text-sm mr-2">A</span>
+                            A varianti <span class="text-red-500">*</span>
+                        </label>
+                        {{ form.option_a }}
+                        {% if form.option_a.errors %}
+                            <p class="mt-1 text-sm text-red-600">{{ form.option_a.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+
+                    <!-- B varianti -->
+                    <div>
+                        <label for="{{ form.option_b.id_for_label }}" class="block text-sm font-medium text-gray-700 mb-2">
+                            <span class="inline-flex items-center justify-center h-6 w-6 bg-blue-100 text-blue-600 rounded font-semibold text-sm mr-2">B</span>
+                            B varianti <span class="text-red-500">*</span>
+                        </label>
+                        {{ form.option_b }}
+                        {% if form.option_b.errors %}
+                            <p class="mt-1 text-sm text-red-600">{{ form.option_b.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+
+                    <!-- C varianti -->
+                    <div>
+                        <label for="{{ form.option_c.id_for_label }}" class="block text-sm font-medium text-gray-700 mb-2">
+                            <span class="inline-flex items-center justify-center h-6 w-6 bg-blue-100 text-blue-600 rounded font-semibold text-sm mr-2">C</span>
+                            C varianti <span class="text-red-500">*</span>
+                        </label>
+                        {{ form.option_c }}
+                        {% if form.option_c.errors %}
+                            <p class="mt-1 text-sm text-red-600">{{ form.option_c.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+
+                    <!-- D varianti -->
+                    <div>
+                        <label for="{{ form.option_d.id_for_label }}" class="block text-sm font-medium text-gray-700 mb-2">
+                            <span class="inline-flex items-center justify-center h-6 w-6 bg-blue-100 text-blue-600 rounded font-semibold text-sm mr-2">D</span>
+                            D varianti <span class="text-red-500">*</span>
+                        </label>
+                        {{ form.option_d }}
+                        {% if form.option_d.errors %}
+                            <p class="mt-1 text-sm text-red-600">{{ form.option_d.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- To'g'ri javob -->
+                <div>
+                    <label for="{{ form.correct_answer.id_for_label }}" class="block text-sm font-semibold text-gray-900 mb-2">
+                        To'g'ri javob <span class="text-red-500">*</span>
+                    </label>
+                    {{ form.correct_answer }}
+                    {% if form.correct_answer.errors %}
+                        <p class="mt-1 text-sm text-red-600">{{ form.correct_answer.errors.0 }}</p>
+                    {% endif %}
+                    <p class="mt-1 text-sm text-gray-500">Qaysi variant to'g'ri ekanligini belgilang</p>
+                </div>
+            </div>
+
+            <!-- Tugmalar -->
+            <div class="flex justify-end gap-4 mt-8 pt-6 border-t border-gray-200">
+                <a href="{% url 'question_list' %}" class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-2.5 px-6 rounded-lg transition duration-200">
+                    Bekor qilish
+                </a>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-200 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    {% if form.instance.id %}Saqlash{% else %}Qo'shish{% endif %}
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Ko'rsatmalar -->
+    <div class="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
+        <h3 class="text-lg font-semibold text-blue-900 mb-3 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            Savol yozish bo'yicha tavsiyalar
+        </h3>
+        <ul class="text-blue-800 space-y-2 text-sm">
+            <li>• Savolni qisqa va aniq shaklda yozing</li>
+            <li>• Har bir variant bir-biridan farq qilishi kerak</li>
+            <li>• Faqat bitta javob to'g'ri bo'lishi kerak</li>
+            <li>• Variantlarda imlo xatolarini tekshiring</li>
+            <li>• Savol matnida grammatik xatoliklar bo'lmasligiga e'tibor bering</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Form fields ni styling qilish
+    const formFields = document.querySelectorAll('input[type="text"], textarea, select');
+    formFields.forEach(field => {
+        field.classList.add('w-full', 'px-4', 'py-2', 'border', 'border-gray-300', 'rounded-lg', 'focus:ring-2', 'focus:ring-blue-500', 'focus:border-blue-500');
+    });
+    
+    // Textarea ni kattalashtirish
+    const textarea = document.querySelector('textarea[name="text"]');
+    if (textarea) {
+        textarea.rows = 4;
+    }
+    
+    // Auto-save functionality
+    const form = document.querySelector('form');
+    const saveButton = form.querySelector('button[type="submit"]');
+    
+    // Form data ni localStorage ga saqlash
+    function saveFormData() {
+        const formData = new FormData(form);
+        const data = {};
+        for (let [key, value] of formData.entries()) {
+            data[key] = value;
+        }
+        localStorage.setItem('questionForm', JSON.stringify(data));
+    }
+    
+    // Form data ni tiklash
+    function restoreFormData() {
+        const savedData = localStorage.getItem('questionForm');
+        if (savedData) {
+            const data = JSON.parse(savedData);
+            for (let [key, value] of Object.entries(data)) {
+                const field = form.querySelector(`[name="${key}"]`);
+                if (field) {
+                    field.value = value;
+                }
+            }
+        }
+    }
+    
+    // Form inputlar o'zgarganda saqlash
+    form.addEventListener('input', saveFormData);
+    
+    // Form yuborilganda localStorage ni tozalash
+    form.addEventListener('submit', function() {
+        localStorage.removeItem('questionForm');
+    });
+    
+    // Agar formda xatolik bo'lsa, ma'lumotlarni tiklash
+    {% if form.errors %}
+        restoreFormData();
+    {% endif %}
+});
+</script>
+
+<style>
+/* Custom form styles */
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+</style>
+{% endblock %}
