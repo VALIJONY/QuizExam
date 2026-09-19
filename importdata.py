@@ -12,12 +12,12 @@ from quiz.models import Question, Subject
 
 def import_questions():
     # 2. Bazada "Subject" (Fan) bor-yo'qligini tekshiramiz. Yo'q bo'lsa, avtomatik yaratamiz.
-    # JSON dagi subject_id: 1 aynan shu fanga bog'lanadi.
+    # JSON dagi subject_id: 6 aynan shu fanga bog'lanadi.
     subject, created = Subject.objects.get_or_create(
-        id=4,
+        id=8,
         defaults={
-            'name': "Ona tili va o'qish savodxonligi", 
-            'description': "Boshlang'ich sinf ta'lim metodikasi bo'yicha testlar"
+            'name': "Bolalar gimnastikasini o'rgatish metodikasi", 
+            'description': "Bolalar gimnastikasi bo'yicha testlar"
         }
     )
     if created:
@@ -25,10 +25,10 @@ def import_questions():
 
     # 3. JSON faylni o'qish
     try:
-        with open('data4.json', 'r', encoding='utf-8') as file:
+        with open('datajt3.json', 'r', encoding='utf-8') as file:
             data = json.load(file)
     except FileNotFoundError:
-        print("XATOLIK: 'data4.json' fayli topilmadi!")
+        print("XATOLIK: 'datajt3.json' fayli topilmadi!")
         return
 
     # 4. Savollarni bazaga yozish

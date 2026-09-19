@@ -1,0 +1,1352 @@
+[
+  {
+    "subject_id": 7,
+    "text": "Yengil atletika sport turini bo'limlarini ko'rsating?",
+    "option_a": "Spоrtchа yurish,yugurish,sakrash,uloqtirish va ko’pkurash.",
+    "option_b": "O’q otish,yugurish,sakrash,uloqtirish va bo’ks.",
+    "option_c": "Suzish,yugurish,sakrash,uloqtirish va ko’pkurash.",
+    "option_d": "Futbol,sakrash,uloqtirish va ko’pkurash.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletikada bosh ortidan qaysi snaryadlar uloqtiriladi?",
+    "option_a": "Nayza, granata, kichik to‘p",
+    "option_b": "bosqon, yadro",
+    "option_c": "to‘ldirma to‘p, bosqon",
+    "option_d": "Yadro, granata, bosqon",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletika musobaqalarida aylana ichidan qaysi uloqtirish snaryadlari uloqtiriladi?",
+    "option_a": "Yadro, disk, bosqon",
+    "option_b": "To‘ldirma to‘p, nayza, kichik to‘p",
+    "option_c": "100 m , granata, nayza",
+    "option_d": "Uch hatlab sakrash , bosqon, gira",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletika sport turi ilk bor O‘zbekistonning qaysi xududida rivojlana boshlagan?",
+    "option_a": "Farg’ona",
+    "option_b": "Xo’jand",
+    "option_c": "Kosonsoy",
+    "option_d": "Sirdaryo",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletikada uloqtirish snaryadlarining qaysilari eng og‘iri hisoblanadi?",
+    "option_a": "Yadro,bosqon",
+    "option_b": "Granata,nayza",
+    "option_c": "Disk,kichik to’p",
+    "option_d": "kichik to’p,tennis koptogi",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletikaning “Maxsus yugurish mashqlari” darsning qaysi qismida o’tiladi?",
+    "option_a": "Tayyorlov qismiga",
+    "option_b": "Tannafusda",
+    "option_c": "Asosiy qismiga",
+    "option_d": "O’tish mumkin emas",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Qadimiy Yunonistonda kuchlilik va chaqqonlikda musobaqalashgan kishilarni kim deb atashgan?",
+    "option_a": "Atlet",
+    "option_b": "Ovchi",
+    "option_c": "Kulol",
+    "option_d": "Naqqosh",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Uloqtirish turlarida natijani o’lchashda metrning nol ko’rsatkichi qaysi tomonda bo’ladi?",
+    "option_a": "Maydonda",
+    "option_b": "Havoda",
+    "option_c": "Hakamga bog’liq",
+    "option_d": "Farqi yo’q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletika qadimiy Yunoncha «atletika» so‘zidan olingan bo‘lib, qanday ma’noni bildiradi?",
+    "option_a": "«mashq», «kurash», «bellashuv» degan ma’noni beradi.",
+    "option_b": "«raqisga tushish », «yurish», «yugurish» degan ma’noni beradi",
+    "option_c": "«yugurish», «Uhlash », «uloqtirish» degan ma’noni beradi",
+    "option_d": "« raqisga tushish », «ko‘pkurash», «bellashuv» degan ma’noni beradi",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletikaninig qaysi snaryadi itqitish orqali amalga oshiriladi va katta maydon talab qilmaydi?",
+    "option_a": "Yadro",
+    "option_b": "Kichik to’p",
+    "option_c": "Nayza",
+    "option_d": "Disk",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletikaning uloqtirish musobaqalarida qaysi snaryadlar yugurib kelib uloqtiriladi.",
+    "option_a": "Nayza, granata, kichik to‘p",
+    "option_b": "To‘ldirma to‘p, kichik to‘p",
+    "option_c": "Yadro,bosqon",
+    "option_d": "Yadro, granata, gira",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletikada uloqtirish snaryadlari to‘g‘ri ko‘rsatilgan qatorni ko‘rsating.",
+    "option_a": "Kichik to‘p, granata, nayza, disk, yadro, bosqon, to‘ldirma top",
+    "option_b": "Futbol to’pi , granata, bosqon, toldirma to‘p, tennis koptogi, gira",
+    "option_c": "Yadro, tennis koptogi, granata, to‘ldirma top, voleybol to’pi",
+    "option_d": "Basketbol to’pi , nayza, yadro, to‘ldirma to‘p, futbol to’pi",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletika musobaqalari qanday joylarda o’tkaziladi?",
+    "option_a": "Stadion,yopiq inshoat(manej),katta yo’l trassalarida,bo’g’li xududlarda",
+    "option_b": "Sport zal,yopiq inshoat,Futbol maydoni ,bo’g’li xududlarda",
+    "option_c": "katta yo’l trassalarida,bo’g’li xududlarda,muz saroylarida",
+    "option_d": "Stadion, katta yo’l trassalarida,bo’g’li xududlarda,muz saroylarida",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Quydagi yengil atletika turlaridan qaysi qatordagisini yopiq inshoatda o’tkazib bo’lmaydi",
+    "option_a": "Nayza, bosqon, 10000 m, marafon",
+    "option_b": "60 m, yugurib kelib uzunlikga sakrash, 400 m",
+    "option_c": "100m, 200m, 60m,",
+    "option_d": "To’ldirma to’p, yadro, uch xatlab sakrash",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Quydagi yengil atletika turlaridan qaysi qatordagisini ochiq maydonda yaniy stadionda o’tkazib bo’lmaydi?",
+    "option_a": "Kross, 50 km sportcha yurish, marafon yugurishi",
+    "option_b": "100 m, yugurib kelib uzunlikga sakrash, 400 m",
+    "option_c": "100m, 200m, 400m,",
+    "option_d": "Nayza uloqtirish, yadro, uch xatlab sakrash",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletikaning qaysi yugurish turlari umumiy chidamlilik sifatini rivojlantiradi?",
+    "option_a": "Kross,o’rta va uzoq masofalarga yugurish",
+    "option_b": "Uzunlikga sakrash",
+    "option_c": "Yadro uloqtirish",
+    "option_d": "G’ovlar osha yugurishlar",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletikaning qaysi yugurish turlari tezkorlik sifatini rivojlantiradi?",
+    "option_a": "Qisqa masofalarga yugurish, estafetali yugurishlar",
+    "option_b": "Yadro uloqtirish",
+    "option_c": "Uzunlikka sakrash",
+    "option_d": "Yadro uloqtirish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletika bo`yicha birinchi zamonaviy Olimpiyada o`yinlari qaerda o`tkazilgan?",
+    "option_a": "Afinada",
+    "option_b": "Toshkent",
+    "option_c": "Misrda",
+    "option_d": "Hindistonda",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Olimpiyada o`yinlari dasturiga erkaklar uchun yengil atletikaning nechta turi kiritilgan?",
+    "option_a": "25",
+    "option_b": "110",
+    "option_c": "120",
+    "option_d": "1",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletikaning Olimpiya o`yinlari dasturiga erkaklar va ayollar uchun kiritilgan turlari nechta?",
+    "option_a": "48",
+    "option_b": "200",
+    "option_c": "80",
+    "option_d": "4",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Granata uloqtirishda urinish xisobga olinganda xakam qaysi rangdagi bayroqni ko`taradi?",
+    "option_a": "Oq",
+    "option_b": "Qizil",
+    "option_c": "Ko`k",
+    "option_d": "Sariq",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Hozirda Jaxonda yengil atletika sport turini rivojlantiruvchi va boshqaruvchi tashkilotni nomi qanday?",
+    "option_a": "World athletikc",
+    "option_b": "IAAF",
+    "option_c": "FIFA",
+    "option_d": "Uz atletiks",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletikada uloqtirish snaryadlari to‘g‘ri ko‘rsatilgan qatorni ko‘rsating?",
+    "option_a": "Kichik to‘p, granata, nayza, disk, yadro, bosqon",
+    "option_b": "futbol to’pi , girya, nayza, disk, yadro, bosqon",
+    "option_c": "Kichik to‘p, futbol to’pi, nayza, disk, yadro, bosqon",
+    "option_d": "Kichik to‘p, tosh, nayza, disk, yadro.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Uzunlikka sakrash musobaqalari finalida necha kishi qatnashadi?",
+    "option_a": "8 kishi",
+    "option_b": "15 kishi",
+    "option_c": "20 kishi",
+    "option_d": "1 kishi",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Spоrtchа yurish olimpiya o’yinlari musobaqalari dasturidan o’rin olganmi?",
+    "option_a": "O’rin olgan",
+    "option_b": "O’rin olmagan",
+    "option_c": "Faqat erkaklar uchun",
+    "option_d": "Faqat ayollar uchun",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Spоrtchа yurishni yugurishdan asosiy fаrqi nimada?",
+    "option_a": "Uchish fazasini yo’qligida",
+    "option_b": "Qadamlar kengligida",
+    "option_c": "Sportchini tayyorgarligida",
+    "option_d": "Farqi yo’q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Olimpiya o`yinlari dasturidan ayollar uchun qisqa masofalarga yugurish masofalarini ko`rsating?",
+    "option_a": "100,200, 400 m",
+    "option_b": "30, 60, 100, 200, 400 m 600",
+    "option_c": "30, 60, 100,200 m",
+    "option_d": "30 ,50, 100,200, 400, 800 m",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Olimpiya o`yinlari dasturidan erkaklar uchun qisqa masofalarga yugurish masofalarini ko`rsating?",
+    "option_a": "100,200, 400 m",
+    "option_b": "60, 100, 200, 400 m",
+    "option_c": "30, 60, 100,200 m",
+    "option_d": "30, 100,200, 400, 800 m",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Sportcha yurishning klаssik turlаrini ko’rsаting?",
+    "option_a": "20 km., аyollаrdа, 20 km vа 50 km erkаklаrdа.",
+    "option_b": "2 km., аyollаrdа, 5 km erkаklаrdа;",
+    "option_c": "15 km., аyollаrdа, 15 km vа 5 km erkаklаrdа;",
+    "option_d": "1 km., аyollаrdа, 4 km erkаklаrdа;",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Spоrtchа yurishda uchish fazasini paydo bo’lishi qanday aniqlanadi?",
+    "option_a": "Sportcha yurishda birdaniga ikki oyog’i ham yerdan uzilganda (yugurganda)",
+    "option_b": "Sakraganda",
+    "option_c": "Futbol o’ynganda",
+    "option_d": "Voleybol mashqarida",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrashda natijani o’lchashda metrning nol ko’rsatkichi qaysi tomonda bo’ladi?",
+    "option_a": "Qo’nish joyida",
+    "option_b": "Havoda joyida",
+    "option_c": "Hakamga bog’liq",
+    "option_d": "Farqi yo’q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Uzunlikka sakrash musobaqasida sportchi ko`rsatgan natija qaydnomaga qanday tartibda yoziladi?",
+    "option_a": "Ko`rsatilgan natija yoziladi; Qizil",
+    "option_b": "belgi qo`yiladi",
+    "option_c": "belgi qo`yiladi",
+    "option_d": "“-” belgi qo`yiladi",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrash usullari to`g’ri ko`rsatilgan qatorni toping.",
+    "option_a": "Oyoqlarni bukib, qaychi, ko`krak kerib",
+    "option_b": "Dumalab, ko`krak kerib, salto",
+    "option_c": "SALTO, dumalab, sapchib",
+    "option_d": "Oyoqlarni bukib, salto, SALTO",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Sportchi balandlikka sakrashda urinishni amalga oshirayotganda plankaga tegib ketdi, lekin sakramadi. Bu holatda hakamning qarori qanday bo‘ladi?",
+    "option_a": "Urinish hisobga olinadi va qizil bayroq ko‘tariladi",
+    "option_b": "Sportchiga urinishni boshqatdan bajarishga ruxsat beradi.",
+    "option_c": "Sportchi musobaqadan chetlashtiriladi.",
+    "option_d": "Sportchi boshqa guruh bilan musobaqani davom ettiradi.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka sakrashning qaysi usulida oxirgi jahon rekordi o‘rnatilgan?",
+    "option_a": "Fosberi flop.",
+    "option_b": "Perekat.",
+    "option_c": "SALTO.",
+    "option_d": "To‘lqinsimon.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka sakrash fazalarini ko`rsating.",
+    "option_a": "Yugurib kelish, depsinish, uchish, plankadan o`tish, qo`nish.",
+    "option_b": "Tez yugurib kelish, qattiq depsinish, uchish, Suzish .",
+    "option_c": "O’q otish , depsinish, plankadan o`tish, uchish, qo`nish.",
+    "option_d": "Suzish , qattiq depsinish, uchish, qo`nish.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka sakrashda Fosberi-flop usuli kimning sharafiga nomlanadi?",
+    "option_a": "Amerikalik sakrovchi R.Fosberi sharafiga.",
+    "option_b": "Hindistonlik sakrovchi J.Flop sharafiga.",
+    "option_c": "Farg’onalik sakrovchi I.Fosberov sharafiga.",
+    "option_d": "Gruzyalik sakrovchi G.Fosberustolos sharafiga.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Ayollar o`rtasida balandlikka sakrash musobaqalarida har bir urinish uchun qancha vaqt ajratiladi?",
+    "option_a": "1 daqiqa.",
+    "option_b": "20 daqiqa.",
+    "option_c": "3 soniya.",
+    "option_d": "Vaqt ajratilmaydi.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka sakrovchilar uchun asosiy jismoniy sifatlar qaysilar?",
+    "option_a": "Egiluvchanlik, tezkorlik, kuch.",
+    "option_b": "Chidamlilik, kuch, tezkorlik.",
+    "option_c": "Chidamlilik, chaqqonlik, tezkorlik.",
+    "option_d": "Chidamlilik, kuch, tezkorlik.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka sakrashda urinishlar qaysi holatlarda hisobga olinmaydi?",
+    "option_a": "Sportchi sakragandan so’ng palanka tushib ketsa, sportchi yugurib kelib plankaga yoki qo’nish joyiga tegib ketsa hamda ustunning ikki tomonida 3 metrli chiziqlardan o’tib ketsa.",
+    "option_b": "Sportchi sakragandan so’ng palanka tushib ketmasa, sportchi yugurib kelib plankaga yoki qo’nish joyiga tegib ketmasa.",
+    "option_c": "Sportchi yugurib kelib planka tagidan o`tib ketsa yoki qo’nish joyiga tegib ketsa hamda ustunning ikki tomonida 3 metrli chiziqlardan o’tib ketmasa.",
+    "option_d": "Yuqoridagi barcha holatlarda.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka sakrashda yugurib kelish joyi masofasi kamida qancha bo`lishi kerak?",
+    "option_a": "20-25 m.",
+    "option_b": "3-3,5 m.",
+    "option_c": "222-228 m.",
+    "option_d": "125-420 m.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka sakrashda qo’nish joyi (yamasi)ning o’lchamlari qancha?",
+    "option_a": "5x3 yoki 6x4 m., h=70 sm.",
+    "option_b": "5x5 yoki 16x4 m., h=500 sm.",
+    "option_c": "5x3 yoki16x6 m., h=600 sm.",
+    "option_d": "5x5 yoki 16x6 m., h=400sm.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka sakrashda agar sportchi urinishdan foydalanmay o`tkazib yuborishni istasa, qaydnomaga qaysi belgi qo`yiladi?",
+    "option_a": "---",
+    "option_b": "Od",
+    "option_c": "Xd",
+    "option_d": "d",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Sportchi belgilangan balandlikni zabt etmaganda balandlikka sakrash qaydnomasiga qaysi belgi qo‘yiladi?",
+    "option_a": "X",
+    "option_b": "0d",
+    "option_c": "f",
+    "option_d": "Ud",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Qisqа mаsоfаlаrgа yugurishda fazalar ketmaketligi qanday bo’ladi?",
+    "option_a": "Stаrt vа stаrtdаn chiqish fаzаsi,masofa bo’ylab yugurish va marraga tashlanish",
+    "option_b": "Suzish , stаrtdаn chiqish fаzаsi,masofa bo’ylab yugurish",
+    "option_c": "Masofa bo’ylab yugurish va marraga tashlanish",
+    "option_d": "Yurish ,start va marraga tashlanish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Qisqa masofalarga yugurishda “Startga” buyrug’i berilganda yuguruvchini harakati qanday bo’ladi?",
+    "option_a": "Start tirgaklariga oyoqlarini qo’yib qo’llarini start chizig’iga to’g’irlab keying buyruqni kutadi",
+    "option_b": "Start shizig’ni oldiga borib turadi",
+    "option_c": "Tizzani yerdan ko’tarib keying buyruqni kutadi",
+    "option_d": "Start tirgaklarini o’ziga qulay qilib moslashtiradi",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Qisqa masofalarga yugurishda “Diqqat” buyrug’i berilganda yuguruvchini harakati qanday bo’ladi?",
+    "option_a": "Tizzani yerdan ko’tarib keying buyruqni kutadi",
+    "option_b": "Start shizig’ni oldiga borib turadi",
+    "option_c": "Start tirgaklarini o’ziga qulay qilib moslashtiradi",
+    "option_d": "Start tirgaklariga oyoqlarini qo’yib qo’llarini start chizig’iga to’g’irlab keying buyruqni kutadi",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Qisqа mаsоfаlаrgа yugurishdа start tirgaklarini o’rnatishni qanday variantlari bor?",
+    "option_a": "Oddiy,uzaytirilgan,yaqinlashtirilgan.",
+    "option_b": "Pastki",
+    "option_c": "Gorizontal",
+    "option_d": "To’g’ri yo’lakda",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Qisqa masofalarning 100 va 200m ga yugurishda erkaklarda Jahon rekordchisi kim bo’lgan?",
+    "option_a": "Usein Bolt",
+    "option_b": "Bob Bimon",
+    "option_c": "Djonotan Edvards",
+    "option_d": "Mayk Pauel",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Qisqа mаsоfаlаrgа yugurishdа xakamning diqqat buyrug’ berilgunga qadar sportchi qaysi tomonga qarab turishi kerak?",
+    "option_a": "Start tirgaklariga joylashib qimirlamasdan pastga qarab turadi",
+    "option_b": "Tizzani yerdan uzib hakamga qarab turadi",
+    "option_c": "Osmonga",
+    "option_d": "Farqi yo’q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Qisqa masofalarning 200 va 400m ga yugurishda sportchi yo’lakning qaysi tomondagi oq chiziqni bosishi mumkin?",
+    "option_a": "O’ng tomondagisini",
+    "option_b": "tomondagisini",
+    "option_c": "Ikki tomondagisini ham bosish mumkin emas",
+    "option_d": "Farqi yo’q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Qisqа mаsоfаlаrgа yugurishdа bir yuguruvchi falstart qilsa chetlashtiriladimi?",
+    "option_a": "Falstart qilgan sportchi chetlashtiriladi",
+    "option_b": "Hamma ogohlantiriladi",
+    "option_c": "Falstart qilmagan sportchi",
+    "option_d": "Yo’q chetlashtirilmaydi",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Qisqa masofalarga yugurishi qaysi jismoniy sifatni koproq rivojlantiradi?",
+    "option_a": "Tezkorlikni",
+    "option_b": "Chidamlilikni",
+    "option_c": "Chaqqonlikni",
+    "option_d": "Kuchni",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Qisqа mаsоfаning 100 m ga yugurish turi bo’yicha yopiq inshoat (manejda) musobaqa o’tkazsa bo’ladimi?",
+    "option_a": "Bo’lmaydi",
+    "option_b": "Bo’ladi",
+    "option_c": "Bosh xakam ruxsat bersa bo’ladi",
+    "option_d": "Bo’ladi faqat kattalar o’rtasida",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Marafon yugurish masofasi qanchaga teng?",
+    "option_a": "42km 195 m",
+    "option_b": "20 km",
+    "option_c": "100 km",
+    "option_d": "1609m",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Uzoq masofalarga yugurishni qisqa masofalarga yugurishdan asosiy farqi nimada?",
+    "option_a": "Qadamlar kengligi va tezligida",
+    "option_b": "Masofalar",
+    "option_c": "Farqi yo’q",
+    "option_d": "Depsinishga",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "O`rta masofalarga yugurishning klassik turlarini ko`rsating?",
+    "option_a": "800 va 1500 m.",
+    "option_b": "500 va 800 m.",
+    "option_c": "500 va 800 m.",
+    "option_d": "500 va 1000 m.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurishida final o’tkaziladimi?",
+    "option_a": "O’tkazilmaydi",
+    "option_b": "O’tkaziladi",
+    "option_c": "O’tkaziladi 8 kishi tushadi",
+    "option_d": "O’tkaziladi 3 kishi tushadi",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurish tehnikasini o’rgatishda ohirgi vazifa nimadan iborat?",
+    "option_a": "Kross yugurish tehnikasni takomillashtirish",
+    "option_b": "tehnikasini o’rgatish",
+    "option_c": "tehnikasi bilan tanishtirish",
+    "option_d": "yugurish tehnikasini o’rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurish qanday joylarda o’tkaziladi?",
+    "option_a": "Tozza havoda bog’li va tog’li joylarda,hiyobonlarda va katta yo’llarda",
+    "option_b": "Stadionda va sport manejlarida",
+    "option_c": "Piyoda yuradigan tratuarlarda (mahsus yo’laklarda)",
+    "option_d": "Sport zallarida",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurishi olimpiya o`yinlari dasturiga kiritilganmi?",
+    "option_a": "Kiritilmagan",
+    "option_b": "Kiritilgan",
+    "option_c": "Mumkin emas",
+    "option_d": "2012 yildan kiritilgan",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurishida necha kishi finalga tushadi?",
+    "option_a": "Final o’tkazilmaydi",
+    "option_b": "800 kishi",
+    "option_c": "100 kishi tushadi",
+    "option_d": "120 kishi",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "O`rta masofaning 800m ga yugurishida yuguruvchilar necha metrdan keyin umumiy yo’lakka o’tishadi?",
+    "option_a": "100 m dan keyin",
+    "option_b": "2000 m dan keyin",
+    "option_c": "3000 m dan keyin",
+    "option_d": "4000 m dan keyin",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "4х100 m ga estafeta yugurish jamoasida necha kishi bo`ladi?",
+    "option_a": "4 nafar",
+    "option_b": "8 nafar",
+    "option_c": "15 nafar",
+    "option_d": "6 nafar",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "4x100 m ga estafeta yugurishda birinchi bosqich ishtirokchilari qanday startdan chiqadilar?",
+    "option_a": "Pastki startdan",
+    "option_b": "O`rta startdan",
+    "option_c": "Yuqori startdan",
+    "option_d": "Farqi yo`q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "4x100 m ga estafeta yugurishda tayoqchani qabul qiluvchi uzatuvchidan qabul qilib tayoqchani tushirib yuborsa tayoqchani kim olishi kerak?",
+    "option_a": "qabul qiluvchi",
+    "option_b": "uzatuvchi",
+    "option_c": "A va B javob ham to’g’ri",
+    "option_d": "Farqi yo’q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "4x100 m ga estafeta yugurishda tayoqchani qabul qiluvchiga uzatuvchi uzatishda tayoqchani tushirib yuborsa tayoqchani kim olib berishi kerak?",
+    "option_a": "uzatuvchi",
+    "option_b": "qabul qiluvchi",
+    "option_c": "A va B javob ham to’g’ri",
+    "option_d": "Farqi yo’q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "4x100 m ga estafeta yugurishda tayoqchani uzatish qaysi bosqichlarda amalga oshiriladi?",
+    "option_a": "2,3,4 bosqichlarda",
+    "option_b": "5,2,3,4 bosqichlarda",
+    "option_c": "6,2,3, bosqichlarda",
+    "option_d": "Faqat 8va 4 bosqichlarda",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Estafeta yugurishda tayoqchani uzatishni qanday usullari bor?",
+    "option_a": "Yuqoridan va pastdan",
+    "option_b": "Yon tomondan",
+    "option_c": "Uzatishni farqi yo’q",
+    "option_d": "Orqa tomondan",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "4x100 m ga estafeta yugurishda ikkinchi bosqich ishtirokchilari qanday startdan chiqadilar?",
+    "option_a": "Yuqori startdan",
+    "option_b": "O`rta startdan",
+    "option_c": "Yon startdan",
+    "option_d": "Farqi yo`q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletika sport turi nechta bo'limdan iborat?",
+    "option_a": "5",
+    "option_b": "19",
+    "option_c": "23",
+    "option_d": "24",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Olimpiya o’yinlari dasturidan o‘rin egallagan yengil atletikaning qaysi uloqtirish snaryadi eng yengili hisoblanadi ?",
+    "option_a": "Nayza",
+    "option_b": "Tosh",
+    "option_c": "Yadro",
+    "option_d": "Bosqon",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletika musobaqalarida qaysi uloqtirish snaryadini uloqtirish uchun baland setkali yoki to’rli to’siqlar o’rnatiladi?",
+    "option_a": "Disk, bosqon",
+    "option_b": "Furbol to‘p, bosqon, yadro",
+    "option_c": "Voleybol , to‘ldirma to‘p, bosqon",
+    "option_d": "Voleybol, granata, bosqon",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletika sport turi bo’yicha ilk bor O‘zbekistonning qaysi xududida musobaqa tashkil qilingan?",
+    "option_a": "1916 Farg’onada",
+    "option_b": "1920 Sho’rchida",
+    "option_c": "1896 urgutda",
+    "option_d": "1945 Xorazmda",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletikaning olimpiya o’yinlari dasturidan o’rin olgan gorizantal to’siqlardan sakrash guruhiga kiruvchi turlarini ko‘rsating?",
+    "option_a": "yugurib kelib uzunlikka sakrash, uch hatlab sakrash",
+    "option_b": "Furbol to‘p, bosqon, yadro",
+    "option_c": "Voleybol , to‘ldirma to‘p, bosqon",
+    "option_d": "Voleybol, granata, bosqon",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Qadimiy Yunonistonda atlet deb kimlarni aytishgan?",
+    "option_a": "kuchlilik va chaqqonlikda musobaqalashgan kishilarni",
+    "option_b": "Askarlarni",
+    "option_c": "Kurashchilarni",
+    "option_d": "Kamonchilarni",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Granata uloqtirish musobaqasida natijani o’lchashda metrning nol ko’rsatkichi qaysi tomonda bo’ladi?",
+    "option_a": "Maydonda",
+    "option_b": "Uloqtirish joyida",
+    "option_c": "Hakamga bog’liq",
+    "option_d": "Farqi yo’q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kichik to’p uloqtirish musobaqasida natijani o’lchashda metrning nol ko’rsatkichi qaysi tomonda bo’ladi?",
+    "option_a": "Maydonda",
+    "option_b": "Uloqtirish joyida",
+    "option_c": "Hakamga bog’liq",
+    "option_d": "Farqi yo’q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Granata uloqtirish musobaqasida natijani o’lchash uchun katta hakam qaysi bayroqni ko’taradi?",
+    "option_a": "Oq",
+    "option_b": "Qizil",
+    "option_c": "Sariq",
+    "option_d": "Bayroq ko’tarilmaydi",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletikaning qaysi uloqtirish turlari Olimpiya o’yinlari dasturidan o’rin olmagan?",
+    "option_a": "Granata, futbol to‘p",
+    "option_b": "Yadro, bosqon",
+    "option_c": "Yadro, disk",
+    "option_d": "Yadro,nayza",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Umumta’lim maktablarida yengil atletikaning qaysi uloqtirish turlari o’rgatiladi?",
+    "option_a": "Kichik to‘p, granata, to‘ldirma top",
+    "option_b": "Nayza, granata, bosqon",
+    "option_c": "Yadro, tennis koptogi, granata",
+    "option_d": "Kichik top, nayza, yadro",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Quydagi yengil atletika turlaridan qaysi qatordagisini yopiq inshoatda o’tkazib bo’lmaydi",
+    "option_a": "Marafon yugurish",
+    "option_b": "60 m",
+    "option_c": "200m",
+    "option_d": "Uch xatlab sakrash",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Quydagi yengil atletika turlaridan qaysi turlari bo’yicha stadionda musobaqalar o’tkazilmaydi?",
+    "option_a": "Kross,marafon yugurish",
+    "option_b": "Qisqa va o’rta masofalarga yugurish",
+    "option_c": "Estafetali yugurishlar va g’ovlar osha yugurish",
+    "option_d": "To’siqlar va g’ovlar osha yugurishlar",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Erkaklar uchun o’quv granatasining og’irligi qancha?",
+    "option_a": "700 gr",
+    "option_b": "50gr",
+    "option_c": "80 gr",
+    "option_d": "60 gr",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Ayollar uchun o’quv granatasining og’irligi qancha?",
+    "option_a": "50 gr",
+    "option_b": "70 gr",
+    "option_c": "80 gr",
+    "option_d": "60gr",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Erkaklar uchun balandlikka sakrash zamonaviy Olimpiya o`yinlari dasturiga qachon kiritilgan?",
+    "option_a": "1896 yil",
+    "option_b": "1900 yil",
+    "option_c": "1904 yil",
+    "option_d": "1928 yil",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Birinchi zamonaviy Olimpiyada o`yinlarida yengil atletikaning nechta turi bo`yicha musobaqalar o`tkazilgan?",
+    "option_a": "12 ta",
+    "option_b": "44ta",
+    "option_c": "33 ta",
+    "option_d": "54 ta",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Hozirda Olimpiyada o`yinlari dasturiga erkaklar uchun yengil atletikaning nechta turi kiritilgan?",
+    "option_a": "24",
+    "option_b": "223",
+    "option_c": "417",
+    "option_d": "51",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Jaxonda yengil atletika sport turini rivojlantiruvchi va boshqaruvchi tashkilotni nomi qanday?",
+    "option_a": "World athletikc (Jaxon yengil atletkasi)",
+    "option_b": "IAAF",
+    "option_c": "FIFA",
+    "option_d": "Uz atletiks",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Erkaklar uchun o’quv granatasining uzunligi qancha?",
+    "option_a": "24 sm",
+    "option_b": "310 sm",
+    "option_c": "218 sm",
+    "option_d": "510 sm",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Estafeta tayoqchasining uzunligi qancha?",
+    "option_a": "28-30 sm",
+    "option_b": "130-40 sm",
+    "option_c": "125 -26 sm",
+    "option_d": "140-50 sm",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "100 m masofaga yugurishda erkaklar o’rtasida jahon rekordi natijasi qanchaga teng?",
+    "option_a": "9.58",
+    "option_b": "10.00",
+    "option_c": "11.00",
+    "option_d": "8.50",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrashda erkaklar o’rtasida jahon rekordi natijasi qanchaga teng?",
+    "option_a": "8m95sm",
+    "option_b": "91m95sm",
+    "option_c": "51m98sm",
+    "option_d": "71m95sm",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrashda ayollar o’rtasida jahon rekordi natijasi qanchaga teng?",
+    "option_a": "7m52sm",
+    "option_b": "81m95sm",
+    "option_c": "51m98sm",
+    "option_d": "71m95sm",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yengil atletikaning Olimpiya o`yinlari dasturiga erkaklar uchun sportcha yurish masofalaridan qaysilari kiritilgan?",
+    "option_a": "20,50 km",
+    "option_b": "310,50 km",
+    "option_c": "110,20 km",
+    "option_d": "51,10 km",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib balandlikka sakrashda ayollar o’rtasida jahon rekordi natijasi qanchaga teng?",
+    "option_a": "2m 09sm",
+    "option_b": "12m95sm",
+    "option_c": "11m98sm",
+    "option_d": "11m95sm",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib balandlikka sakrashda erkaklar o’rtasida jahon rekordi natijasi qanchaga teng?",
+    "option_a": "2m 45sm",
+    "option_b": "12m35sm",
+    "option_c": "12m10sm",
+    "option_d": "12m05sm",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Stadionda yugurish yo`lkasini ajratuvchi oq chiziqni kengligi qancha bo`lishi kerak?",
+    "option_a": "5 sm",
+    "option_b": "30 sm",
+    "option_c": "18 sm",
+    "option_d": "100 sm",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Standart qurilgan stadionning 1 yugurish yulagining o’lchami qancha bo`lishi kerak?",
+    "option_a": "400 m",
+    "option_b": "436 m",
+    "option_c": "440 m",
+    "option_d": "800 m",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Olimpiya o’yinlari dasturidan o‘rin egallagan estafeta yugurish turlarini ko’rsating ?",
+    "option_a": "4x100,4x400, 4x400mix",
+    "option_b": "4x1100,ekiden",
+    "option_c": "4x1400, 4x800",
+    "option_d": "4x1100,4x1500, 4x400mix",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka “hatlab o‘tish” usulida sakrashda sportchi chap oyoq bilan depsinganda plankadan qaysi oyoq birinchi o’tkaziladi?",
+    "option_a": "O’ng oyoq",
+    "option_b": "Chap oyoq",
+    "option_c": "Farqi yo’q",
+    "option_d": "Ikki oyoq birdaniga",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka sakrashda sakrovchi yugurib kelib plankaga qo’li bilan tegib ketsa va sakrashni amalga oshirmasa hakamning ishorasi qanday bo‘ladi?",
+    "option_a": "Qizil bayroq ko‘tarib urinishni hisobga oladi",
+    "option_b": "Hisob emas deb kotibga aytadi",
+    "option_c": "rangsiz bayroqni kotarib natijani hisobga olmaydi",
+    "option_d": "Urinish boshqatdan amalga oshiriladi",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka “hatlab o‘tish” usulida sakrashda sportchi o’ng oyoq bilan depsinganda plankadan qaysi oyoq birinchi o’tkaziladi?",
+    "option_a": "Chap oyoq",
+    "option_b": "Yelka oyoq",
+    "option_c": "Farqi yo’q",
+    "option_d": "Ikki oyoq birdaniga",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka sakrashda sportchi plankaga tegib ketsa va balandlik zabt etilmaganda qaysi rangli bayroq ko‘tariladi?",
+    "option_a": "Qizil",
+    "option_b": "Ikki bayroq ham",
+    "option_c": "Oq",
+    "option_d": "Yashil",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Olimpiyada o`yinlari dasturiga kiritilgan uzoq masofalarni ko’rsating?",
+    "option_a": "5000 m,10000m",
+    "option_b": "100m,20000m",
+    "option_c": "Marafon yugurishi 200 m",
+    "option_d": "200m,50000m",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka hatlab o‘tish usulida sakrash texnikasini o‘rgatishda ikkinchi vazifani ko‘rsating?",
+    "option_a": "Depsinish texnikasini o’rgatish",
+    "option_b": "Voleybol o’yini",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Basketbolda kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka hatlab o‘tish usulida sakrash texnikasini o‘rgatishda uchinchi vazifani ko‘rsating?",
+    "option_a": "Yugurib kelish texnikasini o’rgatish",
+    "option_b": "Voleybol o’yini",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Basketbolda kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka hatlab o‘tish usulida sakrash texnikasini o‘rgatishda to’rtinchi vazifani ko‘rsating?",
+    "option_a": "Planka ustidan o‘tish texnikasini o‘rgatish",
+    "option_b": "Voleybol o’yini",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Basketbolda kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Balandlikka hatlab o‘tish usulida sakrash texnikasini o‘rgatishda beshinchi vazifani ko‘rsating?",
+    "option_a": "Sakrash tehnikasini to’liq takomillashtirish",
+    "option_b": "Voleybol o’yini",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Basketbolda kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Granata uloqtirish texnikasini o‘rgatishda 1 -vazifa nimadan iborat?",
+    "option_a": "Shug’ullanuvchilarni yugurib kelib granata uloqtirish texnikasi bilan tanishtirish",
+    "option_b": "Voleybol o’yini",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Basketbolda kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Granata uloqtirish texnikasini o‘rgatishda 2 -vazifa nimadan iborat?",
+    "option_a": "Granatani to’g’ri ushlash va qo’ldan chiqarib yuborishni o’rgatish",
+    "option_b": "Voleybol o’yini",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Basketbolda kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Granata uloqtirish texnikasini o‘rgatishda 3-vazifa nimadan iborat?",
+    "option_a": "Oxirgi kuch berish fazasini o’rgatish",
+    "option_b": "Voleybol o’yini",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Basketbolda kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Granata uloqtirish texnikasini o‘rgatishda 5- vazifa nimadan iborat?",
+    "option_a": "Granata bilan yugurish va granatani orqaga olib boorish texnikasini o’rgatish",
+    "option_b": "Voleybol o’yini",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Basketbolda kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Granata uloqtirish texnikasini o‘rgatishda 6- vazifa nimadan iborat?",
+    "option_a": "Granatani yugurib kelib uloqtirishni o’rgatish",
+    "option_b": "Shug’ullanuvchilarni yugurib kelib granata uloqtirish texnikasi bilan tanishtirish",
+    "option_c": "Granatani to’g’ri ushlash va qo’ldan chiqarib yuborishni o’rgatish",
+    "option_d": "Oxirgi kuch berish fazasini o’rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrash texnikasini o‘rgatishda 3- vazifa nimadan iborat?",
+    "option_a": "Depsinish texnikasini qadamlar uchish bilan bog’lab o’rgatish",
+    "option_b": "Voleybol o’yini",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Basketbolda kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrash texnikasini o‘rgatishda 4- vazifa nimadan iborat?",
+    "option_a": "Yerga tushish texnikasini o’rgatish",
+    "option_b": "Voleybol o’yini",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Basketbolda kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrash texnikasini o‘rgatishda 5- vazifa nimadan iborat?",
+    "option_a": "Yugurib kelishdan depsinishga to’g’ri o’tishni va oxirgi 4 qadam ritmini o’rgatish",
+    "option_b": "Voleybol o’yini",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Basketbolda kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrash texnikasini o‘rgatishda 6- vazifa nimadan iborat?",
+    "option_a": "To’liq yugurib kelish masofasini aniqlash,nazorat belgilar qo’yish va taxtaga aniq oyoq qo’yishni o’rgatish",
+    "option_b": "Voleybol o’yini",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Basketbolda kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrash texnikasini o‘rgatishda 6- vazifa nimadan iborat?",
+    "option_a": "Uzunlikka sakrash texnikasini yaxlit takomillashtirish",
+    "option_b": "Voleybol o’yini",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Basketbolda kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrashda yaxshi natija ko’rsatishning omili?",
+    "option_a": "Depsinishdan keyingi boshlang’ich uchib chiqish burchagi va tezligi.",
+    "option_b": "Voleybol o’yini",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Basketbolda kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrashda sakrash fazalarini ko’rsating?",
+    "option_a": "Yugurib kelish va depsinishga tayyorlanish, depsinish, uchish, qo`nish.",
+    "option_b": "Yugurish sakrsh",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Yugurish kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrashda yugurib kelish va depsinishga tayyorlanish fazasi qancha davom etadi?",
+    "option_a": "Yugurish boshlanishidan toki oyoqni depsinish joyiga qo’ygunga qadar davom etadi.",
+    "option_b": "Yugurishni boshlash",
+    "option_c": "Futbolda tushishni o‘rgatish",
+    "option_d": "Basketbolda kelishni o‘rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrashda depsinish fazasi qancha davom etadi?",
+    "option_a": "Oyoqni depsinish joyiga qo’ygandan boshlab, depsinish tugab oyoq yerdan uzilgunicha davom etadi.",
+    "option_b": "Yugurish boshlanishidan toki oyoqni depsinish joyiga qo’ygunga qadar davom etadi.",
+    "option_c": "Yugurib kelib, oyoqni depsinish joyiga qo’ygandan boshlab, depsinish tugab oyoq yerdan uzilgunicha davom etadi.",
+    "option_d": "Yugurish boshlanishidan toki depsinish tugagunga qadar davom etadi.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrashda uchish fazasi qancha davom etadi?",
+    "option_a": "Depsinuvchi oyoq tayanchdan uzilgan paytdan to tana yerga tegishiga qadar davom etadi.",
+    "option_b": "Yugurish boshlanishidan toki oyoqni depsinish joyiga qo’ygunga qadar davom etadi.",
+    "option_c": "Yugurib kelib, oyoqni depsinish joyiga qo’ygandan boshlab, depsinish tugab oyoq yerdan uzilgunicha davom etadi.",
+    "option_d": "Yugurish boshlanishidan toki depsinish tugagunga qadar davom etadi.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrashda qo`nish fazasi qancha davom etadi?",
+    "option_a": "Sakrovchining tanasi yerga tekkan paytdan to’liq harakatdan to’xtaguniga qadar davom etadi.",
+    "option_b": "Yugurish boshlanishidan toki oyoqni depsinish joyiga qo’ygunga qadar davom etadi.",
+    "option_c": "Yugurib kelib, oyoqni depsinish joyiga qo’ygandan boshlab, depsinish tugab oyoq yerdan uzilgunicha davom etadi.",
+    "option_d": "Yugurish boshlanishidan toki depsinish tugagunga qadar davom etadi.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Yugurib kelib uzunlikka sakrash tehnikasini o`rgatish uslubiyatida nechta vazifa bor?",
+    "option_a": "10",
+    "option_b": "25",
+    "option_c": "27",
+    "option_d": "28",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurish tehnikasini o’rgatishda 2- vazifa nimadan iborat?",
+    "option_a": "Gorizontal to’siqlardan o’tish tehnikasini o’rgatish",
+    "option_b": "Kross yugurish tehnikasi bilan tanishtirish",
+    "option_c": "Takomillashtirish",
+    "option_d": "Vertikal to’siqlardan o’tib yugurish tehnikasini o’rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurishni qisqa masofalarga yugurishdan asosiy farqi nimada?",
+    "option_a": "Qadamlar kengligi va tezligida",
+    "option_b": "Masofalarda",
+    "option_c": "Farqi yo’q",
+    "option_d": "Depsinish kuchiga",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurishida final o’tkaziladimi?",
+    "option_a": "O’tkaziladi",
+    "option_b": "O’tkazilmaydi",
+    "option_c": "O’tkaziladi 8 kishi tushadi",
+    "option_d": "O’tkaziladi 3 kishi tushadi",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurish tehnikasini o’rgatishda birinchi vazifa nimadan iborat?",
+    "option_a": "Kross yugurish tehnikasi bilan tanishtirish",
+    "option_b": "Gorizontal to’siqlardan o’tish tehnikasini o’rgatish",
+    "option_c": "Takomillashtirish",
+    "option_d": "Vertikal to’siqlardan o’tib yugurish tehnikasini o’rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurish tehnikasini o’rgatishda ohirgi vazifa nimadan iborat?",
+    "option_a": "Kross yugurish tehnikasni takomillashtirish",
+    "option_b": "Gorizontal to’siqlardan o’tish tehnikasini o’rgatish",
+    "option_c": "Kross yugurish tehnikasi bilan tanishtirish",
+    "option_d": "Vertikal to’siqlardan o’tib yugurish tehnikasini o’rgatish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurish qanday joylarda o’tkaziladi?",
+    "option_a": "Tozza havoda bog’li va tog’li joylarda,hiyobonlarda va katta yo’llarda",
+    "option_b": "Stadionda va sport manejlarida",
+    "option_c": "Piyoda yuradigan tratuarlarda (mahsus yo’laklarda)",
+    "option_d": "Sport zallarida",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurishi olimpiya o`yinlari dasturiga kiritilganmi?",
+    "option_a": "Kiritilmagan",
+    "option_b": "Kiritilgan",
+    "option_c": "1896 yildan kiritilgan",
+    "option_d": "2012 yildan kiritilgan",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurishida necha kishi finalga tushadi?",
+    "option_a": "Final o’tkazilmaydi",
+    "option_b": "118 kishi",
+    "option_c": "100 kishi tushadi",
+    "option_d": "112 kishi",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yoki marafon yugurishlarida necha kishi qatnashishi mumkin?",
+    "option_a": "Cheksiz",
+    "option_b": "8 kishi",
+    "option_c": "10 kishi tushadi",
+    "option_d": "12 kishi",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurish tehnikasini o’rgatishda 3- vazifa nimadan iborat?",
+    "option_a": "Vertikal to’siqlardan o’tib yugurish tehnikasini o’rgatish",
+    "option_b": "Kross yugurish",
+    "option_c": "Takomillashtirish",
+    "option_d": "Gorizontal to’siqlardan o’tish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurish tehnikasini o’rgatishda 4- vazifa nimadan iborat?",
+    "option_a": "Past baland joylardan yugurish tehnikasini o’rgatish",
+    "option_b": "Kross yugurish tehnikasi",
+    "option_c": "Takomillashtirish",
+    "option_d": "Gorizontal to’siqlardan o’tish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Kross yugurish tehnikasini o’rgatishda 5- vazifa nimadan iborat?",
+    "option_a": "Kross yugurish tehnikasni takomillashtirish",
+    "option_b": "Kross yugurish tehnikasi",
+    "option_c": "Past baland joylardan yugurish",
+    "option_d": "Gorizontal to’siqlardan o’tish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "O`rta masofalarga yugurishning klassik turlarini ko`rsating?",
+    "option_a": "800 va 1500 m.",
+    "option_b": "4100 va 800 m.",
+    "option_c": "5100 va 800 m.",
+    "option_d": "8100 va 1000 m.",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Uzoq masofalarga yugurishning klassik turlarini ko`rsating?",
+    "option_a": "5000 va 10000m",
+    "option_b": "3000 va 12000m",
+    "option_c": "5000 va 50000m",
+    "option_d": "1500 va 4000m",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "4х100 m ga estafeta yugurish texnikasiga o`rgatishda nechta vazifa bor?",
+    "option_a": "4 ta",
+    "option_b": "15 ta",
+    "option_c": "18 ta",
+    "option_d": "10 ta",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "4х400 m ga estafeta yugurish jamoasida necha kishi bo`ladi?",
+    "option_a": "4 nafar",
+    "option_b": "8 nafar",
+    "option_c": "5 nafar",
+    "option_d": "6 nafar",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "4x100 m ga estafeta yugurishda boshqa yo`lkadan yugurish mumkinmi?",
+    "option_a": "Mumkin emas",
+    "option_b": "Mumkin",
+    "option_c": "Raqibiga xalaqit bermasdan mumkin",
+    "option_d": "Farqi yo`q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "4x100 m ga estafeta yugurishda birinchi bosqich ishtirokchilari qanday startdan chiqadilar?",
+    "option_a": "Pastki startdan",
+    "option_b": "O`rta startdan",
+    "option_c": "Aralash startdan",
+    "option_d": "Farqi yo`q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "4x100 m ga estafeta yugurishda tayoqchani qabul qiluvchi uzatuvchidan qabul qilib tayoqchani tushirib yuborsa tayoqchani kim olishi kerak?",
+    "option_a": "qabul qiluvchi",
+    "option_b": "Uzatuvchi",
+    "option_c": "A va B javob ham to’g’ri",
+    "option_d": "Farqi yo’q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "4x100 m ga estafeta yugurishda tayoqchani qabul qiluvchiga uzatuvchi uzatishda tayoqchani tushirib yuborsa tayoqchani kim olib berishi kerak?",
+    "option_a": "uzatuvchi",
+    "option_b": "qabul qiluvchi",
+    "option_c": "A va B javob ham to’g’ri",
+    "option_d": "Farqi yo’q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "4x100 m ga estafeta yugurishda tayoqchani uzatuvchi tayoqchani qabul qiluvchiga uzatishda boshqa yo’lakdan yugursa bo’ladimi?",
+    "option_a": "Mumkin emas",
+    "option_b": "Qabul qiluvchiga mumkin",
+    "option_c": "Hech qaysisiga mumkin emas",
+    "option_d": "Farqi yo’q",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Estafeta yugurish tehnikasini o’rgatishda 4- vazifa nimadan iborat?",
+    "option_a": "20 m li zonada estafeta tayoqchasini maksimal tezlikda uzata olishga erishish",
+    "option_b": "Startdan chiqish",
+    "option_c": "Sapchish texnikasi",
+    "option_d": "harakatda tezlanish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Estafeta yugurish tehnikasini o’rgatishda 3- vazifa nimadan iborat?",
+    "option_a": "Estafetani qabul qiluvchiga start olishni o’rgatish",
+    "option_b": "Startdan chiqish",
+    "option_c": "Sapchish texnikasi",
+    "option_d": "harakatda tezlanish",
+    "correct_answer": "A"
+  },
+  {
+    "subject_id": 7,
+    "text": "Estafeta yugurish tehnikasini o’rgatishda 2- vazifa nimadan iborat?",
+    "option_a": "Estafeta tayoqchasini uzatish texnikasini o’rgatish",
+    "option_b": "Startdan chiqish",
+    "option_c": "Sapchish texnikasi",
+    "option_d": "harakatda tezlanish",
+    "correct_answer": "A"
+  }
+]
