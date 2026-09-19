@@ -145,7 +145,7 @@ Sayt: <http://127.0.0.1:8000> · Admin panel: <http://127.0.0.1:8000/admin/> · 
 Yangi savollarni uch usulda qoʻshish mumkin:
 
 1. **Admin panel** — `/dashboard/questions/add/` orqali bittalab.
-2. **JSON** — [`importdata.py`](importdata.py) (`datajt*.json` → baza). Har bir element:
+2. **JSON** — [`importdata.py`](importdata.py) (mahalliy `datajt3.json` → baza; `*.json` manba fayllari repozitoriyga kiritilmaydi, ular `.gitignore` da). Har bir element:
 
    ```json
    {
@@ -188,7 +188,7 @@ QuizExam/
 │   └── quiz/               # learn, exam, result
 ├── static/                 # css/quiz.css, js/quiz.js
 ├── importdata.py  import_text.py   # savollarni yuklash skriptlari
-├── data1.json  data3.json  data4.json  datajt*.json  text.txt   # savollar manbalari
+├── text.txt                # oddiy matn ko‘rinishidagi savollar manbasi
 └── docs/screenshots/
 ```
 
