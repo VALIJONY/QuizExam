@@ -10,22 +10,43 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
+import os
 from pathlib import Path
+
+from django.core.exceptions import ImproperlyConfigured
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+try:  # .env ixtiyoriy: python-dotenv o'rnatilgan bo'lsa o'qiladi
+    from dotenv import load_dotenv
+
+    load_dotenv(BASE_DIR / ".env")
+except ImportError:
+    pass
+
+
+def env_bool(name, default=False):
+    return os.getenv(name, str(int(default))).strip().lower() in {"1", "true", "yes", "on"}
+
+
+def env_list(name, default=""):
+    return [item.strip() for item in os.getenv(name, default).split(",") if item.strip()]
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-9j(k*2+!@u(i9ygf6%pw8g*+oos!a0@bgg$r-9%u$qv6)-p@2x'
+DEBUG = env_bool("DJANGO_DEBUG", True)
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "")
+if not SECRET_KEY:
+    if not DEBUG:
+        raise ImproperlyConfigured("DJANGO_DEBUG=0 bo'lganda DJANGO_SECRET_KEY majburiy.")
+    SECRET_KEY = "dev-only-insecure-key-do-not-use-in-production"
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = env_list("DJANGO_ALLOWED_HOSTS", "localhost,127.0.0.1")
 
 
 # Application definition
@@ -78,7 +99,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.getenv('DATABASE_PATH', BASE_DIR / 'db.sqlite3'),
     }
 }
 
@@ -95,22 +116,14 @@ LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'login'
 
-# CSRF settings
-CSRF_COOKIE_SECURE = False  # Development uchun
-CSRF_COOKIE_HTTPONLY = False
-SESSION_COOKIE_SECURE = False  # Development uchun
+# Cookie xavfsizligi: production'da (DEBUG=0) faqat HTTPS orqali
+CSRF_COOKIE_SECURE = not DEBUG
+SESSION_COOKIE_SECURE = not DEBUG
+SESSION_COOKIE_HTTPONLY = True
 
-# CORS settings for ngrok
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8000",
-    "http://127.0.0.1:8000",
-    "https://mitotically-postureteric-darrell.ngrok-free.dev",
-]
-
-# CSRF trusted origins
-CSRF_TRUSTED_ORIGINS = [
-    "https://mitotically-postureteric-darrell.ngrok-free.dev",
-]
+# CORS va CSRF ishonchli manzillar (masalan, tunnel yoki domen) — .env orqali
+CORS_ALLOWED_ORIGINS = env_list("DJANGO_CORS_ORIGINS", "http://localhost:8000,http://127.0.0.1:8000")
+CSRF_TRUSTED_ORIGINS = env_list("DJANGO_CSRF_TRUSTED_ORIGINS")
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/

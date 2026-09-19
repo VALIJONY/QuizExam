@@ -125,18 +125,23 @@ python -m venv venv
 source venv/bin/activate              # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
-# 2. Baza va savollar (7 ta fan, 863 ta savol)
+# 2. Sozlamalar (ixtiyoriy: dasturlash uchun standart qiymatlar bor)
+cp .env.example .env
+
+# 3. Baza va savollar (7 ta fan, 863 ta savol)
 python manage.py migrate
 python manage.py loaddata questions
 
-# 3. Administrator
+# 4. Administrator
 python manage.py createsuperuser
 
-# 4. Ishga tushirish
+# 5. Ishga tushirish
 python manage.py runserver
 ```
 
 Sayt: <http://127.0.0.1:8000> · Admin panel: <http://127.0.0.1:8000/admin/> · Boshqaruv paneli: <http://127.0.0.1:8000/dashboard/>
+
+> Sozlamalar (`DJANGO_SECRET_KEY`, `DJANGO_DEBUG`, `DJANGO_ALLOWED_HOSTS`, CORS/CSRF manzillari) `.env` orqali beriladi; `DJANGO_DEBUG=0` da `DJANGO_SECRET_KEY` majburiy.
 
 > Tailwind va Inter shrifti CDN orqali yuklanadi, shuning uchun sahifalar toʻliq koʻrinishi uchun internet kerak.
 
@@ -194,7 +199,6 @@ QuizExam/
 
 ## Rivojlantirish rejasi
 
-- [ ] Sozlamalarni muhit oʻzgaruvchilariga koʻchirish (`SECRET_KEY`, `DEBUG`, `ALLOWED_HOSTS`, CORS) — hozir `config/settings.py` da dasturlash qiymatlari
 - [ ] Talabaning barcha urinishlari tarixi va xatolar ustida ishlash (imtihondan keyin javoblarni koʻrib chiqish)
 - [ ] Imtihon savollari sonini fan boʻyicha sozlash (hozir 30 ta)
 - [ ] Avtomatik testlar (`quiz/tests.py`)
